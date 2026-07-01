@@ -22,4 +22,9 @@ public class OrganizationService
     {
         return organizationRepository.save(organization);
     }
+
+    public Organization getOrganizationById(Long id)
+    {
+        return organizationRepository.findById(id).orElseThrow(() -> new RuntimeException("Organization not found"));
+    }
 }

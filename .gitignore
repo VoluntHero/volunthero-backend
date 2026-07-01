@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+
+###Things I added
+*.log
+.DS_Store
+Thumbs.db
+
+*.mv.db
+*.trace.db
+

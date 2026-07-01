@@ -24,4 +24,10 @@ public class OrganizationController {
     {
         return organizationService.createOrganization(organization);
     }
+
+    @GetMapping("/{id}")
+    public Organization getOrganization(@PathVariable Long id)
+    {
+        return organizationService.getOrganizationById(id);
+    }
 }
