@@ -17,7 +17,7 @@ public class UserController {
     {
         return authService.signup(user);
     }
-
+    
     @PostMapping("/login")
     public User login(@RequestBody User user)
     {

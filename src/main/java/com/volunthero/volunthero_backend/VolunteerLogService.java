@@ -23,6 +23,11 @@ public class VolunteerLogService {
         return volunteerLogRepository.findAll();
     }
 
+    public List<VolunteerLog> getLogsByUserId(Long userId)
+    {
+        return volunteerLogRepository.findByUserId(userId);
+    }
+
     public VolunteerLog createLog(VolunteerLog volunteerLog) 
     {
         long hours = Duration.between(volunteerLog.getStartTime(), volunteerLog.getEndTime()).toHours();
